@@ -60,13 +60,13 @@
 
   .container {
     margin-top: 40px;
-    margin-bottom: 50px; /* Add margin to the bottom */
+    margin-bottom: 50px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.7); /* Slightly more opaque background */
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Softer shadow for a smoother effect */
-    transition: background-color 0.3s ease; /* Smooth transition for background-color */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
     margin-bottom: 10px;
   }
 
@@ -111,7 +111,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 65px; /* Ensure consistent height */
+    height: 65px;
     z-index: 1000;
     color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -135,7 +135,7 @@
   }
 
   .header .nav a:hover {
-    color: #f0c14b; /* Highlight color for links on hover */
+    color: #f0c14b;
   }
   .header .logo {
     display: flex;
@@ -143,7 +143,7 @@
   }
 
   .logo-img {
-    max-height: 51px; /* Adjust the height as needed */
+    max-height: 51px;
     max-width: 120%;
     height: auto;
   }
@@ -153,7 +153,7 @@
   </style>
 </head>
 <body>
-  <!-- Centered Message -->
+
   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
     <h5 style="color: red;">${failure}</h5>
     <p class="update" style="colr:red">${notupdated}</p>
@@ -161,22 +161,20 @@
 
   </div>
 
-<!-- Header Section -->
+
 <header class="header">
-  <div class="logo">
-    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=277,h=270,fit=crop/AwvJoE0xx0IZMJ8K/ft_power_gym_logo_file_png-01-Yg2apa87NxI6eQXX.png" alt="Logo" class="logo-img">
-  </div>
+
   <nav class="nav">
     <a href="index.jsp">Home</a>
-    <a href="enquiry">Enquiry</a>
-    <a href="followup">follow Up</a>
+    <a href="enquiryPlaces">Enquiry</a>
+    <a href="followUp">follow Up</a>
     <a href="register">Registration</a>
   </nav>
 </header>
 
 
   <div class="container">
-    <!-- Search Row -->
+
     <div class="search-row">
       <form action="searchName" method="POST" style="display: flex; gap: 10px;">
             <input type="text" class="form-control" id="searchName" name="searchName" placeholder="Search name" required >
@@ -184,7 +182,7 @@
       </form>
     </div>
 
-    <!-- Table Container -->
+
     <c:if test="${not empty list}">
      <div class="table-container">
        <h4 class="table-name">Enquiry Details</h4>
@@ -220,7 +218,7 @@
            <c:forEach items="${list}" var="enquiry">
              <tr>
                <form action="updatebutton" method="post" >
-                 <!-- Hidden input to store the enquiry id -->
+
                  <input type="hidden" name="id" value="${enquiry.id}" />
                  <input type="hidden" name="name" value="${enquiry.name}" />
                    <input type="hidden" name="totalAmount" value="${enquiry.amount}" />

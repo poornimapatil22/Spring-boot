@@ -19,7 +19,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/")
 
-public class UpdateRegisteredDetails {
+public class UpdateRegisteredDetailsController {
 
     @Autowired
     private GymService gymService;

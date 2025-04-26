@@ -74,7 +74,7 @@ public class RegistrationController {
 
         if (saved) {
             // Send the registration password via email
-            boolean emailSent = emailService.sendPasswordToEmail(registrationDTO.getEmail(), generatedPassword); // Pass email and password
+            boolean emailSent = emailService.saveRegEmail(registrationDTO.getEmail(), generatedPassword); // Pass email and password
             if (emailSent) {
                 System.out.println("Password sent to: " + registrationDTO.getEmail());
             } else {

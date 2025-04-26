@@ -11,55 +11,51 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      background: url("https://static.vecteezy.com/system/resources/previews/022/653/988/large_2x/treadmill-in-modern-gym-toned-image-3d-rendering-generative-ai-free-photo.jpg") center no-repeat;
-      background-size: cover;
-      color: white;
-      font-family: 'Arial', sans-serif;
+      margin-top:10%;
+      height: auto;
       display: flex;
       justify-content: center;
       align-items: center;
+      background-image: url("https://img.freepik.com/premium-photo/array-dumbbells-precise-rows-essential-equipment-any-gym-vertical-mobile-wallpaper_896558-14134.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #000;
     }
 
     .form-container {
-      width: 100%;
-      max-width: 300px;
-      background-color:black;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:0px,5px,10px,10px;
+      height:50%;
+      width: 40%;
+      max-width: 400px;
+      border: 1px solid #333;
+      border-radius: 15px;
+      background-color: rgba(1, 0.8, 1, 0.8);
+      box-shadow: 0px 2px 10px rgba(200, 200, 200, 0.2);
     }
 
-    .form-title {
-      font-size: 1.8rem;
-      font-weight: 600;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .form-group label {
-      font-size: 1.1rem;
+    label {
+      color: white;
       font-weight: 500;
     }
 
-    .form-control {
-      border-radius: 30px;
-      box-shadow: none;
-      padding: 12px 20px;
-      font-size: 1rem;
-    }
-
-    .form-control:focus {
-      border-color: #007bff;
-      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    .btn-center {
+      display: block;
+      margin: 20px auto;
+      padding: 8px 60px;
+      font-size: 1.2rem;
     }
 
     .password-toggle {
       position: absolute;
       right: 15px;
-      top: 38px;
+      top: 42px;
       cursor: pointer;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: #007bff;
     }
 
@@ -67,96 +63,64 @@
       position: relative;
     }
 
-    .btn-center {
-      display: block;
-      width: 100%;
-      margin-top: 20px;
-      padding: 12px;
-      font-size: 1.2rem;
-      border-radius: 30px;
-      background-color: #206777;
-      color: white;
-      border: none;
-      transition: all 0.3s ease;
-    }
-
-    .btn-center:hover {
-      background-color: #0056b3;
-      transform: scale(1.05);
-    }
-
     .message {
       color: red;
-      margin-bottom: 15px;
-      text-align: center;
     }
 
-    .error-message {
+    #nameValid {
       color: red;
-      font-size: 14px;
-      display: block;
-      margin-top: 10px;
+      font-size: 15px;
     }
 
-    /* Responsive Styles */
+    h6 {
+      color: red;
+    }
+
+
     @media (max-width: 768px) {
+      body {
+        margin: 0;
+        margin-top: 20%;
+      }
       .form-container {
-        padding: 25px;
+        width: 75%;
+        padding: 15px 0;
       }
     }
-
-    @media (max-width: 576px) {
-      .form-container {
-        width: 90%;
-        padding: 20px;
-      }
-
-      .form-title {
-        font-size: 1.5rem;
-      }
-
-      .btn-center {
-        padding: 10px;
-        font-size: 1rem;
-      }
-    }
-
   </style>
 </head>
 <body>
 
-  <div class="form-container">
-    <h2 class="form-title">Login</h2>
-    <form action="userLogin" method="post">
-      <!-- Failure message if login fails -->
-      <div class="message">${failure}</div>
+  <div class="container form-container">
+    <div class="row">
 
-
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" name="useremail" placeholder="Enter your email" required onblur="onField()">
-        <span id="nameValid" class="error-message">${invalidEmail}</span>
+      <div class="col-md-12">
+        <h6>${locked}</h6>
+        <h6>${tryafter2min}</h6>
+        <h2 class="text-center" style="color:white; font-size: 20px;" >User Login</h2>
+        <form action="userLogin" method="post">
+          <span class="message">${failure}</span>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required onblur="onField()">
+            <span id="nameValid"></span>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+            <i class="fas fa-eye password-toggle" id="togglePassword" onclick="togglePassword()"></i> <!-- Font Awesome icon -->
+            <span id="nameValid">${invalidPassword}</span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-center">Login</button>
+        </form>
       </div>
-
-
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
-        <i class="fas fa-eye password-toggle" id="togglePassword" onclick="togglePassword()"></i> <!-- Font Awesome icon -->
-        <span id="nameValid" class="error-message">${invalidPassword}</span>
-      </div>
-
-
-      <button type="submit" class="btn btn-primary btn-center">Login</button>
-    </form>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
   <script>
-
     function togglePassword() {
       const passwordField = document.getElementById('password');
       const toggleIcon = document.getElementById('togglePassword');
@@ -171,13 +135,12 @@
       }
     }
 
-
     const onField = () => {
-      var email = document.getElementById("email");
-      var value = email.value;
+      var name = document.getElementById("email");
+      var value = name.value;
       if (value != "") {
         var xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "http://localhost:8080/Charan_gym/name/" + value, true);
+        xhttp.open("GET", "http://localhost:7878/PATIL_GYM/emailOfUser/" + value, true);
         xhttp.send();
 
         xhttp.onload = function () {

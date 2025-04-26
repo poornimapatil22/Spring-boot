@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <title>Admin Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-
         .video-background {
             position: fixed;
             top: 0;
@@ -28,7 +28,6 @@
             pointer-events: none;
         }
 
-
         .overlay {
             position: fixed;
             top: 0;
@@ -39,100 +38,118 @@
             z-index: 0;
         }
 
-
         .navbar {
             background-color: black;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            position: relative;
             z-index: 1;
         }
 
 
         .navbar-nav .nav-link {
-            font-size: 0.9rem;
-            padding: 8px 12px;
-            margin: 10px;
-            border-radius: 5px;
-            transition: 0.3s ease-in-out;
             color: white !important;
-            background-color: black;
-        }
-
-        .navbar-nav .nav-link:hover {
-            background-color: #0056b3 !important;
-            color: white !important;
-        }
-
-
-        .patil-logo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            margin-right: 15px;
+            padding: 8px 16px;
+            background-color: black; /* Black button-like background */
+            border: 0px solid #444;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
             text-align: center;
         }
 
-        .patil-logo-container img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50px;
-            object-fit: cover;
-        }
-
-        .patil-logo-text {
-            font-size: 12px;
-            color: white;
-            font-weight: bold;
-            margin-top: 3px;
+        .navbar-nav .nav-link:hover {
+            background-color: #0d6efd;
+            color: white !important;
         }
 
 
-        .container {
-            position: relative;
-            z-index: 1;
+        .navbar-toggler-icon {
+        color: white;
+
+        }
+
+
+        .nav-link.user-login {
+            background: none !important;
+            border: none !important;
+            padding: 4px 8px !important;
+            margin-top: 2px;
+            text-align: center;
+        }
+
+        .user-login img {
+            width: 30px;
+            height: 30px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+        .user-login span {
+            font-size: 0.75rem;
+            display: block;
             color: white;
+            margin-top: 2px;
+        }
+
+
+        @media (max-width: 992px) {
+            .navbar-collapse {
+                background-color: rgba(1, 1, 1, 0.95);
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="video-background">
-        <video autoplay loop muted playsinline>
-            <source src="https://videos.pexels.com/video-files/4761426/4761426-uhd_2732_1440_25fps.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+<div class="video-background">
+    <video autoplay loop muted playsinline>
+        <source src="https://videos.pexels.com/video-files/4761426/4761426-uhd_2732_1440_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
 
-    <div class="overlay"></div>
+<div class="overlay"></div>
 
 
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link btn me-2" href="enquiryPlaces">Enquiry</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn me-2" href="followUp">Follow Up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn me-2" href="register">Registration</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn" href="UpdateRegisteredDetails.jsp">Update Profile</a>
-                </li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
 
+
+        <ul class="navbar-nav flex-row align-items-center">
+            <li class="nav-item"><a class="nav-link" href="enquiryPlaces">Enquiry</a></li>
+            <li class="nav-item"><a class="nav-link" href="followUp">Follow Up</a></li>
+            <li class="nav-item"><a class="nav-link" href="register">Registration</a></li>
+            <li class="nav-item"><a class="nav-link" href="UpdateRegisteredDetails.jsp">Update Profile</a></li>
+            <li class="nav-item">
+                <a class="nav-link user-login" href="UserLogin.jsp">
+                    <img src="https://th.bing.com/th?q=User+Login+Icon.png&w=120&h=120" alt="User Icon">
+                    <span>User Login</span>
+                </a>
+            </li>
+        </ul>
+
+
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#adminMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="adminMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="addSlots">Slots</a></li>
+                <li class="nav-item"><a class="nav-link" href="viewTrainer">View Trainer</a></li>
+                <li class="nav-item"><a class="nav-link" href="AssignUsers">Assign Users</a></li>
+                <li class="nav-item"><a class="nav-link" href="UpdateExerciseAndDiet">Update Exercise & Diet</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.jsp">Logout</a></li>
             </ul>
-            <div class="patil-logo-container">
-                <img src="https://th.bing.com/th/id/OIP.r-HF5JGN_rV2Nuyq0ZKtcQHaFj?w=185&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Patil Gym Logo">
-                <span class="patil-logo-text">PATIL GYM</span>
-            </div>
         </div>
-    </nav>
-
-
-    <div class="container mt-5">
-        <!-- Add your page content here -->
     </div>
+</nav>
+
+<div class="container mt-5">
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

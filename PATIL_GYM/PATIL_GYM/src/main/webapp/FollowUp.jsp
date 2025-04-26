@@ -12,7 +12,7 @@
     body {
       min-height: 100vh;
       background-color: black;
-      background-image: url('https://th.bing.com/th?id=OIP.VfWp5z3JDvrjEU39WtbesAHaE8&w=305&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2'); /* Background Image */
+      background-image: url('https://img.freepik.com/premium-photo/dumbbells-water-bottle-jump-rope-gym-mat_634830-1685.jpg');
       background-size: cover;
       background-position: center center;
       background-attachment: fixed;
@@ -20,9 +20,32 @@
       padding-top: 80px;
     }
 
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: black;
+      padding: 10px 0;
+    }
+
+    .navbar-nav a {
+      color: white !important;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .navbar-nav a:hover {
+      background-color: #444;
+      border-radius: 5px;
+    }
+
     .container {
-      margin-top: 40px;
-      background-color: rgba(255, 255, 255, 0.8); /* Light background for the container */
+      margin-top: 100px;
+      background-color: rgba(230, 230, 250, 0.5);
       padding: 30px;
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -35,43 +58,35 @@
       gap: 10px;
     }
 
-
-    .card {
-      border: 2px solid black; /* Adding a square border around the card */
-      border-radius: 15px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-      margin-bottom: 20px;
-      background-color: white;
-      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    .table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+      table-layout: fixed;
     }
 
-    .card:hover {
-      transform: translateY(-10px); /* Move the card upwards slightly */
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    .table th,
+    .table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      vertical-align: middle;
+      word-wrap: break-word;
     }
 
-    .card-header {
-      background-color: black;
-      color:white;
-      font-weight: bold;
-      padding: 10px;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
+    .table th {
+      background-color: #343a40;
+      color: white;
     }
 
-    .card-body {
-      padding: 15px;
+    .table td {
+      background-color: rgba(230, 230, 250, 0.5);
     }
 
-    .card-footer {
-      text-align: right;
-      padding: 10px;
-      border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px;
-    }
-
-    .form-control {
-      margin-bottom: 10px;
+    .table td select,
+    .table td textarea {
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .pagination {
@@ -103,14 +118,15 @@
       text-align: center;
       font-size: 18px;
       color: black;
+      rgba(230, 230, 250, 0.5);
       margin-top: 40px;
     }
 
     .no-records i {
       font-size: 40px;
       color: black;
-    }
 
+    }
 
     .not-updated {
       color: #ff4d4d;
@@ -119,10 +135,39 @@
       text-align: center;
       margin-bottom: 20px;
     }
+
+    .table td textarea {
+      resize: none;
+      height: 100px;
+      font-size: 14px;
+      padding: 8px;
+    }
   </style>
 </head>
 
 <body>
+
+
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid justify-content-center">
+      <ul class="navbar-nav flex-row gap-3">
+      <li class="nav-item">
+                <a class="nav-link" href="Home.jsp">Home</a>
+              </li>
+        <li class="nav-item">
+          <a class="nav-link" href="enquiryPlaces">Enquiry</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register">Registration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="UpdateRegisteredDetails.jsp">Update</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
   <c:if test="${not empty notUpdated}">
     <div class="not-updated">
       ${notUpdated}
@@ -130,7 +175,7 @@
   </c:if>
 
   <div class="container">
-    <!-- Search Row -->
+
     <div class="search-row">
       <form action="followUpOperation" method="POST" style="display: flex; gap: 10px;">
         <select class="form-control" name="status" required>
@@ -145,21 +190,28 @@
       </form>
     </div>
 
-    <!-- Enquiries List -->
-    <c:if test="${not empty list}">
-      <div class="row">
-        <c:forEach items="${list}" var="enquiry">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-header">
-                ${enquiry.name}
-              </div>
-              <div class="card-body">
-                <p><strong>Email:</strong> ${enquiry.email}</p>
-                <p><strong>Phone:</strong> ${enquiry.phoneNumber}</p>
-                <p><strong>Area:</strong> ${enquiry.areaName}</p>
 
-                <!-- Form for each enquiry to update the status and reason -->
+    <c:if test="${not empty list}">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Area</th>
+            <th>Status</th>
+            <th>Reason</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <c:forEach items="${list}" var="enquiry">
+            <tr>
+              <td>${enquiry.name}</td>
+              <td>${enquiry.email}</td>
+              <td>${enquiry.phoneNumber}</td>
+              <td>${enquiry.areaName}</td>
+              <td>
                 <form action="updateStatus" method="POST">
                   <input type="hidden" name="enquiryId" value="${enquiry.id}" />
                   <input type="hidden" name="enquiryName" value="${enquiry.name}" />
@@ -170,18 +222,18 @@
                     <option value="Not Interested" ${enquiry.status == 'Not Interested' ? 'selected' : ''}>Not Interested</option>
                     <option value="Interested" ${enquiry.status == 'Interested' ? 'selected' : ''}>Interested</option>
                   </select>
-                  <textarea class="form-control" name="reason" rows="2" placeholder="Update the reason">${enquiry.reason}</textarea>
-                  <button type="submit" class="btn btn-success mt-3">Update</button>
+              </td>
+              <td>
+                <textarea class="form-control" name="reason" rows="3" placeholder="Update the reason">${enquiry.reason}</textarea>
+              </td>
+              <td>
+                <button type="submit" class="btn btn-success mt-3">Update</button>
                 </form>
-              </div>
-              <div class="card-footer">
-                <!-- The form submits with the 'Update' button inside the card -->
-              </div>
-            </div>
-          </div>
-        </c:forEach>
-      </div>
-
+              </td>
+            </tr>
+          </c:forEach>
+        </tbody>
+      </table>
 
       <c:if test="${totalPages > 1}">
         <div class="pagination">
@@ -192,7 +244,6 @@
       </c:if>
     </c:if>
 
-
     <c:if test="${empty list}">
       <div class="no-records">
         <i class="bi bi-x-circle"></i>
@@ -202,6 +253,9 @@
 
   </div>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

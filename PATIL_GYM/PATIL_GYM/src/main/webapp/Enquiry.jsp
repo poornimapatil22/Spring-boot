@@ -9,7 +9,7 @@
     <title>Enquiry Form</title>
 
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+        @import url("https://img.freepik.com/premium-photo/dumbbells-yoga-mat_959815-2335.jpg");
         * {
           margin: 0;
           padding: 0;
@@ -17,38 +17,81 @@
           font-family: sans-serif;
         }
         body {
-          min-height: 100vh;
+          min-height: 60vh;
+          min-width:60vh;
           display: flex;
           align-items: center;
           justify-content: center;
           padding: 20px;
           background-color: #000;
-          background-image: url("https://img.freepik.com/premium-photo/fitness-healthy-background-concept_28586-237.jpg?w=900");
+          background-image: url("https://media.istockphoto.com/id/1327474895/photo/pink-color-dumbbell-exercise-mat-and-water-bottle-on-white-background.jpg?s=612x612&w=0&k=20&c=fExIoo28unxkQpOtX5I8VxTf_9_qBbbHg0kI3xMCNjA=");
+           background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
         }
-        .container {
-          position: relative;
-          max-width: 700px;
+
+
+        .navbar {
+          background-color: #000;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          position: fixed;
+          top: 0;
+          left: 0;
           width: 100%;
-          background: #fff;
-          padding: 25px;
-          border-radius: 8px;
+          z-index: 999;
         }
+
+        .navbar-nav {
+          display: flex;
+        }
+
+        .navbar-nav a {
+          color: white;
+          text-decoration: none;
+          padding: 10px 20px;
+          background-color: #000;
+          border-radius: 5px;
+          font-size: 1rem;
+          transition: background-color 0.3s;
+        }
+
+
+        .navbar-nav a:hover {
+          background-color: #444;
+        }
+
+
+        .container {
+            position: relative;
+            max-width: 350px;
+            width: 60%;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+
         .container header {
           font-size: 1.5rem;
           color: #333;
           font-weight: 500;
           text-align: center;
         }
-        .container .form {
-          margin-top: 30px;
-        }
+
         .form .input-box {
           width: 100%;
-          margin-top: 20px;
+          margin-top: 10px;
         }
+
         .input-box label {
           color: #333;
         }
+
         .form :where(.input-box input, .select-box) {
           position: relative;
           height: 50px;
@@ -61,43 +104,54 @@
           border-radius: 6px;
           padding: 0 15px;
         }
+
         .input-box input:focus {
           box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
         }
+
         .form .column {
           display: flex;
           column-gap: 15px;
         }
+
         .form .gender-box {
           margin-top: 20px;
         }
+
         .gender-box h3 {
           color: #333;
           font-size: 1rem;
           font-weight: 400;
           margin-bottom: 8px;
         }
+
         .form :where(.gender-option, .gender) {
           display: flex;
           align-items: center;
           column-gap: 50px;
           flex-wrap: wrap;
         }
+
         .form .gender {
           column-gap: 5px;
         }
+
         .gender input {
           accent-color: rgb(70, 35, 247);
         }
+
         .form :where(.gender input, .gender label) {
           cursor: pointer;
         }
+
         .gender label {
           color: #707070;
         }
+
         .address :where(input, .select-box) {
           margin-top: 15px;
         }
+
         .select-box select {
           height: 100%;
           width: 100%;
@@ -106,11 +160,12 @@
           color: #707070;
           font-size: 1rem;
         }
+
         .form button {
           margin-left: 30%;
           height: 40px;
           width: 30%;
-          border-radius: 30px;
+          border-radius: 10px;
           color: #fff;
           font-size: 1rem;
           font-weight: 400;
@@ -120,29 +175,24 @@
           transition: all 0.2s ease;
           background: rgb(102, 74, 241);
         }
+
         .form button:hover {
           background: rgb(45, 6, 240);
         }
-        /* Responsive */
-        @media screen and (max-width: 500px) {
-          .form .column {
-            flex-wrap: wrap;
-          }
-          .form :where(.gender-option, .gender) {
-            row-gap: 15px;
-          }
-        }
+
         .container {
-          padding: 25px;
+          padding: 15px;
           margin-top: 80px;
           border-radius: 8px;
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
           color: white;
         }
+
         .container header,
         .container label {
           color: white;
         }
+
         .container {
           background: rgba(0, 0, 0, 0.5);
           backdrop-filter: blur(px);
@@ -152,6 +202,7 @@
           width: 500px;
           height: 800px;
         }
+
         .input-box select {
           height: 48px;
           width: 100%;
@@ -163,69 +214,21 @@
           padding: 0 15px;
           margin-top: 15px;
         }
-        .header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 15px 30px;
-          position: fixed;
-          top: 0;
-          width: 100%;
-          height: 65px;
-          z-index: 1000;
-          color: white;
-          overflow: hidden;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
-          background-color: #2F2D2E;
-        }
-        .header .logo {
-          font-size: 1.5rem;
-          font-weight: bold;
-        }
-        .header .nav {
-          display: flex;
-          gap: 20px;
-        }
-        .header .nav a {
-          color: white;
-          text-decoration: none;
-          font-size: 1rem;
-          transition: color 0.3s;
-        }
-        .header .nav a:hover {
-          color: #f0c14b;
-        }
-        .header .logo {
-          display: flex;
-          align-items: center;
-        }
-        .logo-img {
-          max-height: 51px;
-          max-width: 120%;
-          height: auto;
-        }
-        .patil-logo img {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          margin-left: 0px;
-        }
-        .patil-logo {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
     </style>
-    </head>
+</head>
 <body>
-<!-- Header Section -->
-<header class="header">
-  <div class="patil-logo">
-    <img src="https://th.bing.com/th/id/OIP.r-HF5JGN_rV2Nuyq0ZKtcQHaFj?w=185&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Logo" class="patil-logo">
-    <span style="font-size:10px;">PATIL GYM</span>
-  </div>
-</header>
+
+
+<div class="navbar">
+    <div class="navbar-nav">
+        <a class="nav-link" href="Home.jsp">Home</a>
+         <a class="nav-link" href="followUp">Follow Up</a>
+        <a class="nav-link" href="register">Registration</a>
+        <a class="nav-link" href="UpdateRegisteredDetails.jsp">Update Profile</a>
+    </div>
+</div>
+
+
 <section class="container">
     <header>Enquiry Form</header>
     <form action="enquiry" class="form" method="post" onsubmit="return validateEmail()">
@@ -236,7 +239,7 @@
 
         <div class="input-box">
             <label>Email Address</label>
-            <input type="email" placeholder="Enter email address"id="email" name="email" onchange="onEmailChange()" required />
+            <input type="email" placeholder="Enter email address" id="email" name="email" onchange="onEmailChange()" required />
             <span id="displayEmail" style="color:red"></span>
         </div>
 
@@ -290,42 +293,35 @@
         <button type="submit">Submit</button>
     </form>
 </section>
+
 <script>
+    function onEmailChange() {
+        var email = document.getElementById('email');
+        var emailValue = email.value;
 
-        function onEmailChange() {
-            var email = document.getElementById('email');
-            var emailValue = email.value;
+        document.getElementById("displayEmail").innerHTML = "Checking...";
 
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "http://localhost:7878/PATIL_GYM/email/" + emailValue, true);
+        xhttp.setRequestHeader("Content-Type", "application/json");
+        xhttp.send();
 
-            document.getElementById("displayEmail").innerHTML = "Checking...";
-
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("GET", "http://localhost:7878/PATIL_GYM/email/" + emailValue, true);
-            xhttp.setRequestHeader("Content-Type", "application/json");
-            xhttp.send();
-
-            xhttp.onload = function () {
-                if (this.status == 200) { // Check if the request was successful
-                    var response = this.responseText;
-
-
-                    if (response === "email already exists") {
-                        document.getElementById("displayEmail").innerHTML = "Email already exists";
-                    } else if (response === "enquiry Email doesn't exists") {
-                        document.getElementById("displayEmail").innerHTML = "Email is available";
-                    } else {
-                        document.getElementById("displayEmail").innerHTML = "Unexpected response from server";
-                    }
+        xhttp.onload = function () {
+            if (this.status == 200) { // Check if the request was successful
+                var response = this.responseText;
+                if (response === "email already exists") {
+                    document.getElementById("displayEmail").innerHTML = "Email already exists";
+                } else if (response === "enquiry Email doesn't exists") {
+                    document.getElementById("displayEmail").innerHTML = "Email is available";
                 } else {
-                    document.getElementById("displayEmail").innerHTML = "Error checking email";
+                    document.getElementById("displayEmail").innerHTML = "Unexpected response from server";
                 }
-            };
-
-
-        }
-
-
-
+            } else {
+                document.getElementById("displayEmail").innerHTML = "Error checking email";
+            }
+        };
+    }
 </script>
+
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 <%@ page isELIgnored = "false"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Submission Details</title>
-    <!-- Bootstrap CSS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8i7c1U4ur7I4pP1M18h72s6Xl3Xlz5jsFz7lF4Vn2ptS4Z1z0o76d2tS8m" crossorigin="anonymous">
     <style>
         body {
@@ -63,7 +62,6 @@
         }
 
         .go-back a {
-
             color: #fff;
             font-size: 1rem;
             text-decoration: none;
@@ -118,7 +116,7 @@
     </div>
 </div>
 
-<!-- Bootstrap JS and dependencies -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8Fq3u3g7zVt10xFLOAy5JlApU7gsA2A2AKxjc16I37V7t3" crossorigin="anonymous"></script>
 </body>
 </html>

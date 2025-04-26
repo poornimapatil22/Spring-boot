@@ -1,15 +1,19 @@
-package com.xworkz.gym.dto;
-
+package  com.xworkz.gym.dto;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.time.LocalDate;
 
 @Data
 @RequiredArgsConstructor
 public class RegistrationDto {
+    private int id;
     private String name;
     private String email;
     private String password;
-    private long phoneNo;
+    private Long phoneNo;
     private String gymPackage;
     private String trainer;
     private double discount;
@@ -18,6 +22,11 @@ public class RegistrationDto {
     private double balanceAmount;
     private int age;
     private double height;
-    double weight;
+    private double weight;
     private double chestSize;
+    private String profileImage;
+
+   // @DateTimeFormat(pattern = "yyyy-MM-dd")  // Specify date format
+   // private LocalDate dob;
 }
+

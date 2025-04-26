@@ -14,4 +14,5 @@ public class AdminDto {
    @NonNull
     private String  email;
     private  String password;
+    private String confirmPassword;
 }

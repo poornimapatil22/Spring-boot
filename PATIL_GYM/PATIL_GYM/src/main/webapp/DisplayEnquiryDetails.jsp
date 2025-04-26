@@ -121,7 +121,7 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS and dependencies -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8Fq3u3g7zVt10xFLOAy5JlApU7gsA2A2AKxjc16I37V7t3" crossorigin="anonymous"></script>
 </body>
 </html>

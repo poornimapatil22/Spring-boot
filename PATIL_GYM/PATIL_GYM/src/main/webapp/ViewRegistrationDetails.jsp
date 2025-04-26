@@ -1,4 +1,3 @@
-
 <%@ page isELIgnored = "false"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -110,7 +109,7 @@
             background-color: #3949ab;
         }
 
-        /* Responsive Design */
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -129,7 +128,7 @@
 <body>
 <div class="container">
     <h2>Search User Details</h2>
-    <!-- Search Form -->
+
     <form method="get" action="searchController" class="mb-4">
         <div class="form-group">
             <label for="searchName" class="form-label">Enter User's Name:</label>
@@ -138,7 +137,6 @@
         <button type="submit">Search</button>
     </form>
 
-    <!-- Display Table only if data is available -->
     <c:if test="${not empty registerDTO}">
         <table class="table table-bordered">
             <tbody>
