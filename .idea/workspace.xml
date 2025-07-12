@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9e12dd39-cb6c-43ab-b515-c0171dc35c6b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.smarttomcat/PATIL_GYM/conf/Catalina/localhost/IndianRailways.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.smarttomcat/PATIL_GYM/conf/catalina.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.smarttomcat/PATIL_GYM/conf/catalina.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.smarttomcat/PATIL_GYM/conf/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.smarttomcat/PATIL_GYM/conf/jaspic-providers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.smarttomcat/PATIL_GYM/conf/jaspic-providers.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.smarttomcat/PATIL_GYM/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.smarttomcat/PATIL_GYM/conf/server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.smarttomcat/PATIL_GYM/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.smarttomcat/PATIL_GYM/conf/tomcat-users.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/.smarttomcat/PATIL_GYM/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/RestController/AdminRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/RestController/EnquiryRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/RestController/RegistrationRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/RestController/UserLoginRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/configuration/WebConfiguaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/constants/GymPackagesEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/constants/GymPlacesEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/constants/GymTrainersEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/constants/ProfileImagePath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/controller/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/controller/EnquiryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/controller/FollowUpController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/controller/RegistrationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/controller/TrainerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/controller/UpdateExcerciseAndDietController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/controller/UpdateRegisteredDetailsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/controller/UserLoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/dto/AdminDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/dto/EnquiryDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/dto/RegistrationDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/dto/TrainerDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/dto/UserExcerciseAndDietDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/entity/AbstractAuditEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/entity/AdminEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/entity/EnquiryEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/entity/RegistrationEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/entity/SlotsEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/entity/TrainerEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/entity/UpdatedEnquiryDetailsEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/entity/UserAssignedToTrainerEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/entity/UserExcerciseAndDietEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/entity/UserUpdatedExcerciseAndDietEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/initialization/WebInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/repository/GymRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/repository/GymRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/service/EmailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/service/GymService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/java/com/xworkz/gym/service/GymServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/resources/static/images" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/AddSlots.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/AdminForgotPassword.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/AdminLogin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/AssignUsersToNewTrainer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/AssignUsersToTrainers.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/CreateSlots.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/DisplayEnquiryDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/DisplayFollowUp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/DisplayRegisteredDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/DisplayUpdatedRegisteredDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/DisplayUpdatedUserProfile.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/DisplayUserTrainerAndSlot.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/DisplayUsersAssignedToTrainer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/Enquiry.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/ExcerciseAndDiet.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/FollowUp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/Home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/RegisteredUserSearch.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/Registration.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/Success.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/TrainerDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/UpdateRegisteredDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/UpdateTrainer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/UpdateUserExcerciseAndDiet.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/UpdateUserProfile.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/UserLogin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/UserProfile.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/UserSetNewPassword.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/ViewExcerciseAndDiet.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/ViewRegistrationDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/ViewUserExcerciseAndDiet.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/PATIL_GYM/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/untitled/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/untitled/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/untitled/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATIL_GYM/untitled/.idea/workspace.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2zdvlVpPC8dk0ZHidxx8PLDTuSc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GymApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Smart Tomcat.Tomcat: PATIL_GYM (1).executor&quot;: &quot;Run&quot;,
+    &quot;Smart Tomcat.Tomcat: PATIL_GYM.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/Desktop/PATIL_GYM/src/main/webapp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\PATIL_GYM\PATIL_GYM\src\main" />
+      <recent name="C:\Users\ASUS\Desktop\PATIL_GYM\PATIL_GYM\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat: PATIL_GYM" type="com.poratu.idea.plugins.tomcat">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="catalinaBase" value="C:\Users\ASUS\.SmartTomcat\PATIL_GYM\PATIL_GYM" />
+      <option name="contextPath" value="/PATIL_GYM" />
+      <option name="docBase" value="C:\Users\ASUS\Desktop\PATIL_GYM\src\main\webapp" />
+      <option name="extraClassPath" value="" />
+      <option name="port" value="8000" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/9.0.38(5)" />
+          <option name="path" value="$USER_HOME$/Downloads/apache-tomcat-9.0.38-windows-x64/apache-tomcat-9.0.38" />
+          <option name="version" value="9.0.38.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <module name="PATIL_GYM" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e12dd39-cb6c-43ab-b515-c0171dc35c6b" name="Changes" comment="" />
+      <created>1752073926407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752073926407</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xworkz/gym/controller/AdminController.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xworkz/gym/controller/AdminController.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
